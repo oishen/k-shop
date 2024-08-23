@@ -1,0 +1,38 @@
+#cartdisplay img{
+    width: 80px;
+}
+#cart-total h2, #cart-total h6{
+    font-weight: 600;
+}
+#cart-total #button{
+    box-shadow: 0 0 10px silver;
+}
+#cart-total #divButton{
+    background-color: silver;
+}
+#cart-total input{
+    border: none;
+    background: transparent;
+    padding-left: 20px;
+    outline: none;
+}
+
+
+@media only screen and (max-width: 992px){
+    #cartdisplay #table{
+        width: 100%;
+        overflow: auto;
+    }
+    #cartdisplay.table{
+        width: 900px;
+    }
+}
+
+@media only screen and (max-width: 578px){
+    #cartdisplay .table{
+        width: 500px;
+    }
+    #cartdisplay img{
+        width: 60px;
+    }
+}

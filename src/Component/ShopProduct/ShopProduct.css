@@ -1,0 +1,22 @@
+#shopproduct select{
+    width: 120px;
+    cursor: pointer;
+}
+#empty{
+    display: none;
+}
+#empty img{
+    width: 60%;
+    margin-top: -50px;
+}
+#empty h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #949494;
+    margin-top: -80px;
+}
+
+@media only screen and (max-width: 576px){
+    #empty h1{
+        margin-top: -50px;
+    }
+}

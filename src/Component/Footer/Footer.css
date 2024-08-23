@@ -1,0 +1,42 @@
+#footer img{
+    width: 120px;
+}
+#footer i{
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+#footer i:nth-child(1){
+    color: blue;
+    border: 1px solid blue;
+    transition: .5s;
+    cursor: pointer;
+}
+#footer i:nth-child(1):hover{
+    color: white;
+    background-color: blue;
+}
+#footer i:nth-child(2){
+    color: red;
+    border: 1px solid red;
+    transition: .5s;
+    cursor: pointer;
+}
+#footer i:nth-child(2):hover{
+    color: white;
+    background-color: red;
+}
+#footer i:nth-child(3){
+    color: black;
+    border: 1px solid black;
+    transition: .5s;
+    cursor: pointer;
+}
+#footer i:nth-child(3):hover{
+    color: white;
+    background-color: black;
+}
