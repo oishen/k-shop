@@ -1,0 +1,14 @@
+#shop .carousel-inner img{
+    object-fit: cover;
+    padding: 50px;
+    width: 400px;
+    height: 400px;
+}
+#shop .carousel-indicators button{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+#shop h3{
+    font-weight: 550;
+}

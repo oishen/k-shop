@@ -61,7 +61,7 @@ const CartDisplay = () => {
                             <h6 className='h6'>Total</h6>
                             <h6>${getTotalCartAmount().toFixed(2)}</h6>
                         </div>
-                        <Link to='/kim/shipping' className='btn btn-danger ps-5 pe-5 p-2 rounded-0 text-light' id='button'>PROCEED TO CHECKOUT</Link>
+                        <Link to='/k-shop/shipping' className='btn btn-danger ps-5 pe-5 p-2 rounded-0 text-light' id='button'>PROCEED TO CHECKOUT</Link>
                     </div>
 
                     <div className="col-md-5 col-sm-12 mb-5">

@@ -6,7 +6,7 @@ const Item = (props) => {
         <div id='item' className="d-flex justify-content-center">
             <div>
                 <div className="border rounded-3 p-3" id="img">
-                    <Link to={`/kim/product/${props.id}`} onClick={window.scroll(0,0)}>
+                    <Link to={`/k-shop/product/${props.id}`} onClick={window.scroll(0,0)}>
                         <img src={props.image} alt={props.name} />
                     </Link>
                 </div>

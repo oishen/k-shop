@@ -81,7 +81,7 @@ const Shipping = () => {
                             
                         </div><br />
                         <div className="d-flex gap-3 mt-3">
-                            <Link to='/kim/cart' className='btn btn-secondary rounded-3 w-50' >Cancel</Link>
+                            <Link to='/k-shop/cart' className='btn btn-secondary rounded-3 w-50' >Cancel</Link>
                             <button className='btn btn-danger rounded-3 w-50' >Continue</button>
                         </div>
                     </div>

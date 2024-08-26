@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from 'react'
 import './Navbar.css'
 import { Link, useLocation } from 'react-router-dom'
 import { ShopContext } from '../ShopContext/ShopContext'
+import img from "../../Component/assets/logo.png"
 
 const Navbar = () => {
     const [menu, setMenu] = useState('shop')
@@ -39,33 +40,33 @@ const Navbar = () => {
             <nav className="navbar navbar-expand-lg p-1">
                 <div className="container-lg">
                     <a className="navbar-brand">
-                        <img src="../src/Component/assets/logo.png" alt="" />
+                        <img src={img} alt="logo" />
                     </a>
 
                     <div className="d-lg-block d-none">
                         <ul className="navbar-nav gap-4">
                             <li className="nav-item">
-                                <Link to='/' className={`nav-link ${menu === 'shop' ? 'active' : ''}`} onClick={()=>setMenu('shop')} >All Products</Link>
+                                <Link to='/k-shop' className={`nav-link ${menu === 'shop' ? 'active' : ''}`} onClick={()=>setMenu('shop')} >All Products</Link>
                                 {menu === 'shop'}
                             </li>
                             <li className="nav-item">
-                                <Link to='/kim/earphone' className={`nav-link ${menu === 'earphone' ? 'active' : ''}`} onClick={()=>setMenu('earphone')} >Earphone</Link>
+                                <Link to='/k-shop/earphone' className={`nav-link ${menu === 'earphone' ? 'active' : ''}`} onClick={()=>setMenu('earphone')} >Earphone</Link>
                                 {menu === 'earphone'}
                             </li>
                             <li className="nav-item">
-                                <Link to='/kim/tablet' className={`nav-link ${menu === 'tablet' ? 'active' : ''}`} onClick={()=>setMenu('tablet')} >Tablet</Link>
+                                <Link to='/k-shop/tablet' className={`nav-link ${menu === 'tablet' ? 'active' : ''}`} onClick={()=>setMenu('tablet')} >Tablet</Link>
                                 {menu === 'tablet'}
                             </li>
                             <li className="nav-item">
-                                <Link to='/kim/laptop' className={`nav-link ${menu === 'laptop' ? 'active' : ''}`} onClick={()=>setMenu('laptop')} >Laptop</Link>
+                                <Link to='/k-shop/laptop' className={`nav-link ${menu === 'laptop' ? 'active' : ''}`} onClick={()=>setMenu('laptop')} >Laptop</Link>
                                 {menu === 'laptop'}
                             </li>
                             <li className="nav-item">
-                                <Link to='/kim/phone' className={`nav-link ${menu === 'phone' ? 'active' : ''}`} onClick={()=>setMenu('phone')} >Phone</Link>
+                                <Link to='/k-shop/phone' className={`nav-link ${menu === 'phone' ? 'active' : ''}`} onClick={()=>setMenu('phone')} >Phone</Link>
                                 {menu === 'phone'}
                             </li>
                             <li className="nav-item">
-                                <Link to='/kim/watch' className={`nav-link ${menu == 'watch' ? 'active' : ''}`} onClick={()=>setMenu('watch')} >Watch</Link>
+                                <Link to='/k-shop/watch' className={`nav-link ${menu == 'watch' ? 'active' : ''}`} onClick={()=>setMenu('watch')} >Watch</Link>
                                 {menu === 'watch'}
                             </li>
                         </ul>
@@ -76,13 +77,13 @@ const Navbar = () => {
                             <i className="fa-solid fa-magnifying-glass nav-link" data-bs-toggle='modal' data-bs-target='#searchModal'></i>
                         </li>
                         <li className={`nav-item ${menu == 'cart' ? 'active' : ''}`} onClick={()=>setMenu('cart')}>
-                            <Link to='/kim/cart' className='nav-link' >
+                            <Link to='/k-shop/cart' className='nav-link' >
                                 <i className="fa-solid fa-cart-plus" ></i>
                                 <span className="badge bg-danger rounded-circle">{getTotalCartItem()}</span>
                             </Link>
                         </li>
                         <li className={`nav-item ${menu == 'login' ? 'active' : ''}`} onClick={()=>setMenu('login')}>
-                            <Link to='/kim/login' className="nav-link btn bg-dark text-white ps-3 pe-3">Login</Link>
+                            <Link to='/k-shop/login' className="nav-link btn bg-dark text-white ps-3 pe-3">Login</Link>
                         </li>
                         <button type='button' data-bs-toggle='modal' data-bs-target='#navResponsive' className='navbar-toggler' >
                             <span className='navbar-toggler-icon'></span>
@@ -105,7 +106,7 @@ const Navbar = () => {
                              <form action="" className='container-lg d-flex align-items-center gap-2' onChange={onSearch}>
                                 <i className="fa-solid fa-magnifying-glass nav-link"></i>
                                 <input type="text" placeholder='Search products ...' />
-                                <Link to='/kim/search'>
+                                <Link to='/k-shop/search'>
                                     <input type="submit" className='d-none' data-bs-dismiss="modal"   />
                                 </Link>
                              </form>
@@ -130,19 +131,19 @@ const Navbar = () => {
                                     <Link to='/' className={`nav-link ${menu == 'shop' ? 'active' : ''}`} onClick={()=>setMenu('shop')}  >All Products</Link>
                                 </li>
                                 <li className="nav-item" data-bs-dismiss="modal">
-                                    <Link to='/kim/earphone' className={`nav-link ${menu == 'earphoe' ? 'active' : ''}`} onClick={()=>setMenu('earphone')} >Earphone</Link>
+                                    <Link to='/k-shop/earphone' className={`nav-link ${menu == 'earphoe' ? 'active' : ''}`} onClick={()=>setMenu('earphone')} >Earphone</Link>
                                 </li>
                                 <li className="nav-item" data-bs-dismiss="modal">
-                                    <Link to='/kim/tablet' className={`nav-link ${menu == 'tablet' ? 'active' : ''}`} onClick={()=>setMenu('tablet')} >Tablet</Link>
+                                    <Link to='/k-shop/tablet' className={`nav-link ${menu == 'tablet' ? 'active' : ''}`} onClick={()=>setMenu('tablet')} >Tablet</Link>
                                 </li>
                                 <li className="nav-item" data-bs-dismiss="modal">
-                                    <Link to='/kim/laptop' className={`nav-link ${menu == 'laptop' ? 'active' : ''}`} onClick={()=>setMenu('laptop')} >Laptop</Link>
+                                    <Link to='/k-shop/laptop' className={`nav-link ${menu == 'laptop' ? 'active' : ''}`} onClick={()=>setMenu('laptop')} >Laptop</Link>
                                 </li>
                                 <li className="nav-item" data-bs-dismiss="modal">
-                                    <Link to='/kim/phone' className={`nav-link ${menu == 'phone' ? 'active' : ''}`} onClick={()=>setMenu('phone')} >Phone</Link>
+                                    <Link to='/k-shop/phone' className={`nav-link ${menu == 'phone' ? 'active' : ''}`} onClick={()=>setMenu('phone')} >Phone</Link>
                                 </li>
                                 <li className="nav-item" data-bs-dismiss="modal">
-                                    <Link to='/kim/watch' className={`nav-link ${menu == 'watch' ? 'active' : ''}`} onClick={()=>setMenu('watch')} >Watch</Link>
+                                    <Link to='/k-shop/watch' className={`nav-link ${menu == 'watch' ? 'active' : ''}`} onClick={()=>setMenu('watch')} >Watch</Link>
                                 </li>
                             </ul>
                         </div>

@@ -23,22 +23,22 @@ const App = () => {
         <BrowserRouter>
             <Navbar/>
             <Routes>
-                <Route path="/" element={<Shop />} />
-                <Route path="/kim/earphone" element={<ProductPage banner={headphone_banner} category="earphone" />} />
-                <Route path="/kim/tablet" element={<ProductPage banner={tablet_banner} category="tablet" />} />
-                <Route path="/kim/laptop" element={<ProductPage banner={laptop_banner} category="laptop" />} />
-                <Route path="/kim/phone" element={<ProductPage banner={phone_banner} category="phone" />} />
-                <Route path="/kim/watch" element={<ProductPage banner={watch_banner} category="watch" />} />
-                <Route path="/kim/product" element={<Product/>} >
+                <Route path="/k-shop" element={<Shop />} />
+                <Route path="/k-shop/earphone" element={<ProductPage banner={headphone_banner} category="earphone" />} />
+                <Route path="/k-shop/tablet" element={<ProductPage banner={tablet_banner} category="tablet" />} />
+                <Route path="/k-shop/laptop" element={<ProductPage banner={laptop_banner} category="laptop" />} />
+                <Route path="/k-shop/phone" element={<ProductPage banner={phone_banner} category="phone" />} />
+                <Route path="/k-shop/watch" element={<ProductPage banner={watch_banner} category="watch" />} />
+                <Route path="/k-shop/product" element={<Product/>} >
                     <Route path=":productId" element={<Product/>} />
                 </Route>
-                <Route path='/kim/cart' element={<Cart/>} />
-                <Route path="/kim/login" element={<Login/>} />
-                <Route path="/kim/signup" element={<Signup/>} />
-                <Route path="/kim/shipping" element={<Shipping/>} />
-                <Route path="/kim/payment" element={<Payment/>} />
-                <Route path="/kim/order" element={<Order/>} />
-                <Route path="/kim/search" element={<Search/>} />
+                <Route path='/k-shop/cart' element={<Cart/>} />
+                <Route path="/k-shop/login" element={<Login/>} />
+                <Route path="/k-shop/signup" element={<Signup/>} />
+                <Route path="/k-shop/shipping" element={<Shipping/>} />
+                <Route path="/k-shop/payment" element={<Payment/>} />
+                <Route path="/k-shop/order" element={<Order/>} />
+                <Route path="/k-shop/search" element={<Search/>} />
             </Routes>
             <Footer/>
         </BrowserRouter>

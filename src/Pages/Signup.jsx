@@ -9,7 +9,7 @@ const Signup = () => {
                 <input type="text" name="email" placeholder="your email" className="form-control" /><br />
                 <input type="password" name="password" placeholder="password" className="form-control" /><br />
                 <button className="btn btn-danger ps-4 pe-4 p-2 w-100 mb-2" value="submit">Continue</button>
-                <p>Already have an account? <Link to='/kim/login' className="text-decoration-none text-danger">Login here</Link></p>
+                <p>Already have an account? <Link to='/k-shop/login' className="text-decoration-none text-danger">Login here</Link></p>
                 <div className="d-flex align-items-center gap-1">
                     <input type="checkbox" />
                     <p className="mb-auto">By continue, i agree to the terms of use & privacy policy.</p>
