@@ -46,7 +46,7 @@ const CartTotal = () => {
                         <h6>${getTotalCartAmount().toFixed(2)}</h6>
                     </div>
                     <div className="d-flex justify-content-center">
-                        <Link to='/' className='btn btn-danger rounded-5 ps-5 pe-5 mt-4 text-center'>ADD MORE PRODUCTS</Link>
+                        <Link to='/k-shop' className='btn btn-danger rounded-5 ps-5 pe-5 mt-4 text-center'>ADD MORE PRODUCTS</Link>
                     </div>
                 </div><br />
         </div>
