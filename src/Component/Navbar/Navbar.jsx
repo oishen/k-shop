@@ -74,7 +74,7 @@ const Navbar = () => {
 
                     <ul className="navbar-nav align-items-center gap-3 flex-row">
                         <li className={`nav-item `}>
-                            <i className="fa-solid fa-magnifying-glass nav-link" data-bs-toggle='modal' data-bs-target='#searchModal'></i>
+                            <i className="fa-solid fa-magnifying-glass" data-bs-toggle='modal' data-bs-target='#searchModal'></i>
                         </li>
                         <li className={`nav-item ${menu == 'cart' ? 'active' : ''}`} onClick={()=>setMenu('cart')}>
                             <Link to='/k-shop/cart' className='nav-link' >
@@ -104,7 +104,7 @@ const Navbar = () => {
 
                         <div className="modal-body">
                              <form action="" className='container-lg d-flex align-items-center gap-2' onChange={onSearch}>
-                                <i className="fa-solid fa-magnifying-glass nav-link"></i>
+                                <i className="fa-solid fa-magnifying-glass"></i>
                                 <input type="text" placeholder='Search products ...' />
                                 <Link to='/k-shop/search'>
                                     <input type="submit" className='d-none' data-bs-dismiss="modal"   />
