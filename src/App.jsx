@@ -20,7 +20,7 @@ import Search from "./Pages/Search"
 
 const App = () => {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/k-shop">
             <Navbar/>
             <Routes>
                 <Route path="/k-shop" element={<Shop />} />
