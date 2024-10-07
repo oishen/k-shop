@@ -1,8 +1,8 @@
 #shop .carousel-inner img{
-    object-fit: cover;
-    padding: 50px;
+    /* object-fit: cover; */
+    padding: 20px;
     width: 400px;
-    height: 400px;
+    /* height: 460px; */
 }
 #shop .carousel-indicators button{
     width: 5px;
@@ -11,4 +11,10 @@
 }
 #shop h3{
     font-weight: 550;
+}
+
+@media only screen and (max-width: 992px){
+    #shop .carousel-inner img{
+        height: auto;
+    }
 }

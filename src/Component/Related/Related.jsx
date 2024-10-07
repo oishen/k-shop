@@ -20,7 +20,7 @@ const Related = (props) => {
             <div className="container">
                 <h2 className="h2 text-center">Related Products</h2>
                 <div id="line" className="mb-5"></div>
-                <div className="d-flex gap-5" id="divRelated">
+                <div className="d-flex gap-md-5 gap-2" id="divRelated">
                     {cat.map((product,i)=>{
                         return(
                             

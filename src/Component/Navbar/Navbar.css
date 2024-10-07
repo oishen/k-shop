@@ -1,8 +1,8 @@
-#navbar .active{
+#navbar .active, #navbar .nav-link:hover{
     color: #DC3545;
 }
 #navbar img{
-    width: 90px;
+    width: 60px;
 }
 #navbar input{
     outline: none;

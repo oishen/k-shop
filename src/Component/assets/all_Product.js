@@ -76,7 +76,7 @@ import p12_3_img from './msi-cyborg-4.png'
 import p12_4_img from './msi-cyborg-5.png'
 
 import p13_img from './samsung-galaxy-watch-1.webp'
-import p13_1_img from './samsung-galaxy-watch-2.webp'
+import p13_1_img from './samsung-galaxy-watch-2.png'
 import p13_2_img from './samsung-galaxy-watch-3.png'
 import p13_3_img from './samsung-galaxy-watch-4.webp'
 

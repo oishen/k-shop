@@ -2,7 +2,7 @@
 import { useState } from "react"
 import all_Product from "../Component/assets/all_Product"
 import Item from "../Component/Item/Item"
-import slide1_img from '../Component/assets/samsung-galaxy-watch-2.webp'
+import slide1_img from '../Component/assets/samsung-galaxy-watch-2.png'
 import slide2_img from '../Component/assets/google-pixel-1.png'
 import slide3_img from '../Component/assets/hp-probook-1.png'
 import slide4_img from '../Component/assets/iphone15-pro-3.png'
@@ -22,11 +22,7 @@ const Shop = () => {
 
     return (
         <div id="shop">
-            {/* <div className="container-fluid-lg" id="div-banner">
-                <img src={banner} alt="shop banner" className='w-100' />
-            </div> */}
-
-            <div className="mt-5 mb-5 container-lg">
+            <div className="mb-5 container-lg container-fluid">
                 <div className="row align-items-center mb-5 d-flex flex-column-reverse flex-lg-row">
                     <div className="col-lg-7 col-12">
                         <h3 className="h3 w-75 mb-5">DISCOVERED YOUR FAVORITE PRODUCTS</h3>
@@ -49,17 +45,17 @@ const Shop = () => {
                         <div className="carousel-inner">
                             
                             <div className="carousel-item active">
-                                <img src={slide1_img} alt="Samsung Galaxy Watch 5" className="d-block m-auto" />
+                                <img src={slide1_img} alt="Samsung Galaxy Watch 5" className="d-block w-100" />
                             </div>
                             
                             <div className="carousel-item">
-                                <img src={slide2_img} alt="Google Pixelbook 13.3" className="d-block m-auto" />
+                                <img src={slide2_img} alt="Google Pixelbook 13.3" className="d-block w-100" />
                             </div>
                             <div className="carousel-item">
-                                <img src={slide3_img} alt="HP Probook" className="d-block m-auto" />
+                                <img src={slide3_img} alt="HP Probook" className="d-block w-100" />
                             </div>
                             <div className="carousel-item">
-                                <img src={slide4_img} alt="Apple Iphone 15 Pro Max" className="d-block m-auto" />
+                                <img src={slide4_img} alt="Apple Iphone 15 Pro Max" className="d-block w-100" />
                             </div>
                         </div>
                         {/* <!-- Left and right controls/icons --> */}
@@ -77,7 +73,7 @@ const Shop = () => {
                 <div className="d-flex justify-content-between mb-5">
                     <h2 className="h2 text-center">{selectCategory.charAt(0).toUpperCase() + selectCategory.slice(1)} <span>({filter.length})</span></h2>
                     <div className="d-flex align-items-center gap-3">
-                        <p className="m-auto" style={{width: "240px"}}>Sort by category:</p>
+                        <p className="m-auto col-6">Sort by category:</p>
                         <select className='form-select' onChange={handleChange}>
                             <option value="all product">All</option> 
                             <option value="earphone">Earphone</option>

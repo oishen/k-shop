@@ -1,43 +1,17 @@
-import { useContext, useEffect, useState } from 'react'
+import { useContext, useState } from 'react'
 import './Navbar.css'
-import { Link, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { ShopContext } from '../ShopContext/ShopContext'
 import img from "../../Component/assets/logo.png"
 
 const Navbar = () => {
     const [menu, setMenu] = useState('shop')
 
-    const location = useLocation();
-
     const {getTotalCartItem, onSearch} = useContext(ShopContext)
     
-    useEffect(() => {
-        // Set the active menu based on the current path
-        const path = location.pathname;
-        if (path.includes('watch')) {
-            setMenu('watch');
-        } else if (path.includes('earphone')) {
-            setMenu('earphone');
-        } else if (path.includes('tablet')) {
-            setMenu('tablet');
-        } else if (path.includes('laptop')) {
-            setMenu('laptop');
-        } else if (path.includes('phone')) {
-            setMenu('phone');
-        } else if (path.includes('cart')) {
-            setMenu('cart');
-        } else if (path.includes('login')) {
-            setMenu('login');
-        } else if (path.includes('sign')) {
-            setMenu('signup');
-        } else {
-            setMenu('shop');
-        }
-    }, [location.pathname]);
-    
     return (
-        <div id='navbar'>
-            <nav className="navbar navbar-expand-lg p-1">
+        <div id='navbar' className='pb-5 mb-3'>
+            <nav className="navbar navbar-expand-lg p-0 fixed-top bg-white" style={{height: '50px'}}>
                 <div className="container-lg">
                     <a className="navbar-brand">
                         <img src={img} alt="logo" />
@@ -46,28 +20,22 @@ const Navbar = () => {
                     <div className="d-lg-block d-none">
                         <ul className="navbar-nav gap-4">
                             <li className="nav-item">
-                                <Link to='/k-shop' className={`nav-link ${menu === 'shop' ? 'active' : ''}`} onClick={()=>setMenu('shop')} >All Products</Link>
-                                {menu === 'shop'}
+                                <Link to='/k-shop/' className={`nav-link ${menu === 'shop' ? 'active' : ''}`} onClick={()=>setMenu('shop')} >All Products</Link>
                             </li>
                             <li className="nav-item">
                                 <Link to='/k-shop/earphone' className={`nav-link ${menu === 'earphone' ? 'active' : ''}`} onClick={()=>setMenu('earphone')} >Earphone</Link>
-                                {menu === 'earphone'}
                             </li>
                             <li className="nav-item">
                                 <Link to='/k-shop/tablet' className={`nav-link ${menu === 'tablet' ? 'active' : ''}`} onClick={()=>setMenu('tablet')} >Tablet</Link>
-                                {menu === 'tablet'}
                             </li>
                             <li className="nav-item">
                                 <Link to='/k-shop/laptop' className={`nav-link ${menu === 'laptop' ? 'active' : ''}`} onClick={()=>setMenu('laptop')} >Laptop</Link>
-                                {menu === 'laptop'}
                             </li>
                             <li className="nav-item">
                                 <Link to='/k-shop/phone' className={`nav-link ${menu === 'phone' ? 'active' : ''}`} onClick={()=>setMenu('phone')} >Phone</Link>
-                                {menu === 'phone'}
                             </li>
                             <li className="nav-item">
                                 <Link to='/k-shop/watch' className={`nav-link ${menu == 'watch' ? 'active' : ''}`} onClick={()=>setMenu('watch')} >Watch</Link>
-                                {menu === 'watch'}
                             </li>
                         </ul>
                     </div>
@@ -106,7 +74,7 @@ const Navbar = () => {
                              <form action="" className='container-lg d-flex align-items-center gap-2' onChange={onSearch}>
                                 <i className="fa-solid fa-magnifying-glass"></i>
                                 <input type="text" placeholder='Search products ...' />
-                                <Link to='/k-shop/search'>
+                                <Link to='/k-shop/k-shop/search'>
                                     <input type="submit" className='d-none' data-bs-dismiss="modal"   />
                                 </Link>
                              </form>
@@ -128,10 +96,10 @@ const Navbar = () => {
                         <div className="modal-body">
                              <ul className="navbar-nav gap-4">
                                 <li className="nav-item" data-bs-dismiss="modal">
-                                    <Link to='/' className={`nav-link ${menu == 'shop' ? 'active' : ''}`} onClick={()=>setMenu('shop')}  >All Products</Link>
+                                    <Link to='/k-shop/' className={`nav-link ${menu == 'shop' ? 'active' : ''}`} onClick={()=>setMenu('shop')}  >All Products</Link>
                                 </li>
                                 <li className="nav-item" data-bs-dismiss="modal">
-                                    <Link to='/k-shop/earphone' className={`nav-link ${menu == 'earphoe' ? 'active' : ''}`} onClick={()=>setMenu('earphone')} >Earphone</Link>
+                                    <Link to='/k-shop/earphone' className={`nav-link ${menu == 'earphone' ? 'active' : ''}`} onClick={()=>setMenu('earphone')} >Earphone</Link>
                                 </li>
                                 <li className="nav-item" data-bs-dismiss="modal">
                                     <Link to='/k-shop/tablet' className={`nav-link ${menu == 'tablet' ? 'active' : ''}`} onClick={()=>setMenu('tablet')} >Tablet</Link>

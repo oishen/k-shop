@@ -56,7 +56,7 @@ const ProductDisplay = (props) => {
                         <h2>{product.name}</h2>
                         <div className="d-flex gap-2 mb-3 mt-3 align-items-center">
                             <div className='gap-2 d-flex'>
-                                <i className="fa-solid fa-star" style={{color: '#FFDC87'}}></i>
+                                <i className="fa-solid fa-star fa-bounce" style={{color: '#FFDC87'}}></i>
                                 <i className="fa-regular fa-star"></i>
                                 <i className="fa-regular fa-star"></i>
                                 <i className="fa-regular fa-star"></i>
@@ -81,7 +81,7 @@ const ProductDisplay = (props) => {
                                 )                                
                             })}
                         </div>
-                        <div className={`d-flex gap-1 align-items-center mt-4 ${product.stock===0?'d-none':'d-block'}`}>
+                        {/* <div className={`d-flex gap-1 align-items-center mt-4 ${product.stock===0?'d-none':'d-block'}`}>
                             <button className='btn btn-outline-secondary rounded-2 ps-3 pe-3 p-1' onClick={onMinus}>
                                 <i className="fa-solid fa-minus"></i>
                             </button>
@@ -89,7 +89,7 @@ const ProductDisplay = (props) => {
                             <button className='btn btn-outline-secondary rounded-2 ps-3 pe-3 p-1' onClick={onPlus} >
                                 <i className="fa-solid fa-plus"></i>
                             </button>
-                        </div>
+                        </div> */}
                         <span id='outofstock' className={`${product.stock===0?'d-block':'d-none'}`}>*Out of stock</span>
                         <a className={`btn btn-warning text-light mt-4 p-2 ps-3 pe-3 rounded-1 ${product.stock===0?'disabled':''
                         }`} onClick={()=>{addToCart(product.id)}}>ADD TO CART</a>
