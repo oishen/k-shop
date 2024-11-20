@@ -74,7 +74,7 @@ const Navbar = () => {
                              <form action="" className='container-lg d-flex align-items-center gap-2' onChange={onSearch}>
                                 <i className="fa-solid fa-magnifying-glass"></i>
                                 <input type="text" placeholder='Search products ...' />
-                                <Link to='/k-shop/k-shop/search'>
+                                <Link to='/k-shop/search'>
                                     <input type="submit" className='d-none' data-bs-dismiss="modal"   />
                                 </Link>
                              </form>
