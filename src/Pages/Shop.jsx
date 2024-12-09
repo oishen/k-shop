@@ -3,7 +3,7 @@ import { useState } from "react"
 import all_Product from "../Component/assets/all_Product"
 import Item from "../Component/Item/Item"
 import slide1_img from '../Component/assets/samsung-galaxy-watch-2.png'
-import slide2_img from '../Component/assets/google-pixel-1.png'
+import slide2_img from '../Component/assets/google-pixel-2.png'
 import slide3_img from '../Component/assets/hp-probook-1.png'
 import slide4_img from '../Component/assets/iphone15-pro-3.png'
 import "./Css/Shop.css"
@@ -61,10 +61,10 @@ const Shop = () => {
                         {/* <!-- Left and right controls/icons --> */}
                         <div>
                             <button className="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                                <i class="fa-solid fa-chevron-left" style={{color: 'black'}}></i>
+                                <i className="fa-solid fa-chevron-left" style={{color: 'black'}}></i>
                             </button>
                             <button className="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                                <i class="fa-solid fa-chevron-right" style={{color: 'black'}}></i>
+                                <i className="fa-solid fa-chevron-right" style={{color: 'black'}}></i>
                             </button>
                         </div>
                     </div>

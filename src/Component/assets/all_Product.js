@@ -1,4 +1,3 @@
-import p1_img from './google-pixel-1.png'
 import p1_1_img from './google-pixel-2.png'
 import p1_2_img from './google-pixel-3.png'
 import p1_3_img from './google-pixel-4.png'
@@ -11,7 +10,6 @@ import p2_3_img from './hp-probook-4.png'
 import p2_4_img from './hp-probook-5.png'
 
 import p3_img from './iphone12-1.png'
-import p3_1_img from './iphone12-2.webp'
 import p3_2_img from './iphone12-3.webp'
 import p3_3_img from './iphone12-4.webp'
 import p3_4_img from './iphone12-5.webp'
@@ -49,7 +47,6 @@ import p8_2_img from './iphone15-pro-max-3.png'
 
 import p9_img from './iwatch-se-1.webp'
 import p9_1_img from './iwatch-se-2.png'
-import p9_2_img from './iwatch-se-3.png'
 import p9_3_img from './iwatch-se-4.png'
 import p9_4_img from './iwatch-se-5.png'
 import p9_5_img from './iwatch-se-6.png'
@@ -65,7 +62,6 @@ import p10_6_img from './iwatch-series-8-7.webp'
 import p10_7_img from './iwatch-series-8-8.webp'
 
 import p11_img from './macbook-pro-15-1.png'
-import p11_1_img from './macbook-pro-15-2.png'
 import p11_3_img from './macbook-pro-15-4.png'
 import p11_4_img from './macbook-pro-15-5.png'
 
@@ -86,7 +82,7 @@ let all_Product = [
     {
         id: 1,
         name: "Google Pixelbook 13.3",
-        images: [p1_img, p1_1_img, p1_2_img, p1_3_img, p1_4_img],
+        images: [p1_1_img, p1_2_img, p1_3_img, p1_4_img],
         new_price: 349.99,
         old_price: 444.99,
         category: "laptop",
@@ -106,7 +102,7 @@ let all_Product = [
     {
         id: 3,
         name: "Apple Iphone 12",
-        images: [p3_img, p3_1_img, p3_2_img, p3_3_img, p3_4_img, p3_5_img, p3_6_img],
+        images: [p3_img, p3_2_img, p3_3_img, p3_4_img, p3_5_img, p3_6_img],
         new_price: 259.85,
         old_price: 290.85,
         category: "phone",
@@ -166,7 +162,7 @@ let all_Product = [
     {
         id: 9,
         name: "Silicone Sport Strap Band",
-        images: [p9_img, p9_1_img, p9_2_img, p9_3_img, p9_4_img, p9_5_img, p9_6_img],
+        images: [p9_img, p9_1_img, p9_3_img, p9_4_img, p9_5_img, p9_6_img],
         new_price: 2.53,
         old_price: 3.09,
         category: "watch",
@@ -186,7 +182,7 @@ let all_Product = [
     {
         id: 11,
         name: "Apple MacBook Pro",
-        images: [p11_img, p11_1_img, p11_3_img, p11_4_img],
+        images: [p11_img, p11_3_img, p11_4_img],
         new_price: 449.00,
         old_price: 573.04,
         category: "laptop",
